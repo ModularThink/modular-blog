@@ -1,17 +1,17 @@
 .blog-post-content {
-    @apply leading-relaxed text-skin-neutral-11;
+    @apply text-neutral-11 leading-relaxed;
 }
 
 .blog-post-content h1 {
-    @apply mb-4 mt-8 text-3xl font-semibold;
+    @apply mt-8 mb-4 text-3xl font-semibold;
 }
 
 .blog-post-content h2 {
-    @apply mb-4 mt-8 text-2xl font-semibold;
+    @apply mt-8 mb-4 text-2xl font-semibold;
 }
 
 .blog-post-content h3 {
-    @apply mb-4 mt-8 text-xl font-semibold;
+    @apply mt-8 mb-4 text-xl font-semibold;
 }
 
 .blog-post-content p {
@@ -19,9 +19,9 @@
 }
 
 .blog-post-content img {
-    @apply mb-8 mt-4 rounded-lg shadow-lg;
+    @apply mt-4 mb-8 rounded-lg shadow-lg;
 }
 
 .blog-post-content a {
-    @apply text-skin-primary-9 hover:underline;
+    @apply text-primary-9 hover:underline;
 }

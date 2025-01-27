@@ -5,7 +5,7 @@
 
             <a
                 href="#"
-                class="text-skin-primary-9 text-sm hover:underline"
+                class="text-primary-9 text-sm hover:underline"
                 @click.prevent="toggleSeoForm"
             >
                 Edit SEO content
@@ -14,7 +14,7 @@
 
         <small
             v-show="categoryStore.showSeoAlert()"
-            class="text-skin-neutral-9 block text-sm"
+            class="text-neutral-9 block text-sm"
         >
             (fill the title and description to see a preview)
         </small>
@@ -23,12 +23,12 @@
             <div>
                 <div class="mb-2 mt-2 flex items-center">
                     <div
-                        class="from-skin-neutral-3 to-skin-neutral-6 mr-4 flex h-10 w-10 rounded-full bg-gradient-to-bl"
+                        class="from-neutral-3 to-neutral-6 mr-4 flex h-10 w-10 rounded-full bg-gradient-to-bl"
                     ></div>
 
                     <div class="flex flex-col items-start">
                         <p class="text-sm">Your Site Name</p>
-                        <p class="text-skin-neutral-10 -mt-1 text-sm">
+                        <p class="text-neutral-10 -mt-1 text-sm">
                             https://your-domain.com/blog/category/{{
                                 categoryStore.getSlug()
                             }}
@@ -37,7 +37,7 @@
                 </div>
 
                 <div>
-                    <p class="text-skin-primary-11 text-2xl">
+                    <p class="text-primary-11 text-2xl">
                         {{ categoryStore.category.meta_tag_title }}
                     </p>
 
@@ -58,7 +58,7 @@
                         'input-error': errorsFields.includes('meta_tag_title')
                     }"
                 />
-                <small class="text-skin-neutral-9 block text-right">
+                <small class="text-neutral-9 block text-right">
                     {{ categoryStore.getRemainingChars('meta_tag_title', 60) }}
                     of 60
                 </small>
@@ -79,7 +79,7 @@
                         )
                     }"
                 />
-                <small class="text-skin-neutral-9 block text-right">
+                <small class="text-neutral-9 block text-right">
                     {{
                         categoryStore.getRemainingChars(
                             'meta_tag_description',

@@ -15,11 +15,11 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <!-- Section Title -->
             <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-skin-neutral-11 sm:text-4xl">
+                <h2 class="text-skin-neutral-11 text-3xl font-bold tracking-tight sm:text-4xl">
                     Blog
                 </h2>
 
-                <p class="mt-2 text-lg leading-8 text-skin-neutral-12">
+                <p class="text-skin-neutral-12 mt-2 text-lg leading-8">
                     @if (isset($fromArchive))
                         Posts from archive:
                         <span class="font-semibold">{{ $fromArchive }}</span>
@@ -43,22 +43,22 @@
                 <div
                     class="mx-auto mt-16 grid max-w-sm grid-cols-1 gap-x-8 gap-y-16 md:max-w-2xl md:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     @foreach ($posts as $post)
-                        <article class="rounded bg-skin-neutral-11">
+                        <article class="bg-skin-neutral-11 rounded">
                             <a href="/blog/{{ $post->slug }}"
-                                class="flex flex-col items-start justify-between px-6 py-6 text-skin-neutral-2 transition-all duration-300 ease-out hover:bg-skin-neutral-12 hover:text-skin-neutral-1">
+                                class="text-skin-neutral-2 hover:bg-skin-neutral-12 hover:text-skin-neutral-1 flex flex-col items-start justify-between px-6 py-6 transition-all duration-300 ease-out">
                                 <header class="relative w-full">
                                     @if ($post->image_url)
                                         <img src="{{ $post->image_url }}" alt="{{ $post->title }}"
-                                            class="aspect-[16/9] w-full object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                                            class="aspect-[16/9] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
                                     @else
                                         <div
-                                            class="flex aspect-[16/9] w-full items-center justify-center rounded-2xl bg-gradient-to-bl from-skin-neutral-1 to-skin-neutral-6 sm:aspect-[2/1] lg:aspect-[3/2]">
-                                            <span class="text-lg text-skin-neutral-9">
+                                            class="from-skin-neutral-1 to-skin-neutral-6 flex aspect-[16/9] w-full items-center justify-center rounded-2xl bg-gradient-to-bl sm:aspect-[2/1] lg:aspect-[3/2]">
+                                            <span class="text-skin-neutral-9 text-lg">
                                                 N/A
                                             </span>
                                         </div>
                                     @endif
-                                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-skin-neutral-10/10">
+                                    <div class="ring-skin-neutral-10/10 absolute inset-0 rounded-2xl ring-1 ring-inset">
                                     </div>
                                 </header>
                                 <div class="max-w-xl">
@@ -77,7 +77,7 @@
                                                 @if ($post->author->image_url)
                                                     <img src="{{ $post->author->image_url }}"
                                                         alt="{{ $post->author->name }}"
-                                                        class="h-4 w-4 rounded-md bg-skin-neutral-2 object-cover" />
+                                                        class="bg-skin-neutral-2 h-4 w-4 rounded-md object-cover" />
                                                 @else
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                                         fill="currentColor" class="h-4 w-4">
@@ -91,7 +91,7 @@
                                         </div>
                                     </div>
                                     <div class="group relative mb-2">
-                                        <h3 class="mb-2 mt-3 min-h-12 text-lg font-semibold leading-6">
+                                        <h3 class="mt-3 mb-2 min-h-12 text-lg leading-6 font-semibold">
                                             <span class="absolute inset-0"></span>
                                             {{ $post->title }}
                                         </h3>
@@ -103,7 +103,7 @@
                                         <footer class="mt-4 min-h-[44px]">
                                             @foreach ($post->tags as $tag)
                                                 <a href="/blog/tag/{{ $tag->slug }}"
-                                                    class="mr-2 inline-block rounded bg-skin-neutral-1 px-3 py-1.5 text-sm">
+                                                    class="bg-skin-neutral-1 mr-2 inline-block rounded px-3 py-1.5 text-sm">
                                                     {{ $tag->name }}
                                                 </a>
                                             @endforeach
@@ -115,7 +115,7 @@
                     @endforeach
                 </div>
             @else
-                <p class="mt-2 rounded bg-skin-neutral-3 px-4 py-2 text-skin-neutral-9">
+                <p class="bg-skin-neutral-3 text-skin-neutral-9 mt-2 rounded px-4 py-2">
                     No posts found.
                 </p>
             @endif

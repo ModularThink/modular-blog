@@ -132,11 +132,13 @@ const { can } = useAuthCan()
 </script>
 
 <style scoped>
+@reference "../../../css/app.css";
+
 .category-visible {
-    @apply bg-skin-success-light text-skin-success;
+    @apply bg-success-light text-success;
 }
 
 .category-invisible {
-    @apply bg-skin-warning-light text-skin-warning;
+    @apply bg-warning-light text-warning;
 }
 </style>
