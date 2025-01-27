@@ -22,28 +22,28 @@ class BlogAclSeeder extends Seeder
     private function getPermissions(): array
     {
         return [
-            //Main Menu
+            // Main Menu
             'Blog',
 
-            //BlogPost/PostIndex.vue
+            // BlogPost/PostIndex.vue
             'Blog: Post - List',
             'Blog: Post - Create',
             'Blog: Post - Edit',
             'Blog: Post - Delete',
 
-            //BlogCategory/CategoryIndex.vue
+            // BlogCategory/CategoryIndex.vue
             'Blog: Category - List',
             'Blog: Category - Create',
             'Blog: Category - Edit',
             'Blog: Category - Delete',
 
-            //BlogAuthor/AuthorIndex.vue
+            // BlogAuthor/AuthorIndex.vue
             'Blog: Author - List',
             'Blog: Author - Create',
             'Blog: Author - Edit',
             'Blog: Author - Delete',
 
-            //BlogTag/TagIndex.vue
+            // BlogTag/TagIndex.vue
             'Blog: Tag - List',
             'Blog: Tag - Create',
             'Blog: Tag - Edit',
