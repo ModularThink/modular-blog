@@ -21,7 +21,7 @@
 
         <template v-if="showSeoForm">
             <div>
-                <div class="mb-2 mt-2 flex items-center">
+                <div class="mt-2 mb-2 flex items-center">
                     <div
                         class="from-neutral-3 to-neutral-6 mr-4 flex h-10 w-10 rounded-full bg-gradient-to-bl"
                     ></div>

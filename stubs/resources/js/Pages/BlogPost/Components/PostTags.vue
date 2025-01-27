@@ -1,5 +1,5 @@
 <template>
-    <p class="mb-1 mt-5">Tag</p>
+    <p class="mt-5 mb-1">Tag</p>
     <AppCombobox
         v-model="selectedTag"
         :options="tags"
