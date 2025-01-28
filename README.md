@@ -8,7 +8,7 @@
 [![Vue v3.x](https://img.shields.io/badge/Vue.js-v3.x-2f4053?style=for-the-badge&logo=vue.js&logoColor=39af78)](https://vuejs.org/)
 [![Inertia.js v2.x](https://img.shields.io/badge/Inertia.js-v2.x-6765ea?style=for-the-badge&logo=inertia&logoColor=ffffff)](https://inertiajs.com/)
 [![Laravel v11.x](https://img.shields.io/badge/Laravel-v11.x-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com)
-[![Tailwind CSS v3.x](https://img.shields.io/badge/Tailwind%20CSS-v3.x-31b5f7?style=for-the-badge&logo=tailwind-css&logoColor=ffffff)](https://tailwindcss.com/)
+[![Tailwind CSS v4.x](https://img.shields.io/badge/Tailwind%20CSS-v4.x-31b5f7?style=for-the-badge&logo=tailwind-css&logoColor=ffffff)](https://tailwindcss.com/)
 [![Tests passing](https://img.shields.io/badge/Tests-passing-green?style=for-the-badge&logo=github)](https://github.com/daniel-cintra/modular-blog/actions)
 
 </center>
@@ -19,10 +19,10 @@ The Modular Blog Module is a comprehensive solution for adding a blog to applica
 
 The **Blog Module's CMS** (Content Management System) side, has the following features:
 
--   Posts Management
--   Categories Management
--   Tags Management
--   Authors Management
+- Posts Management
+- Categories Management
+- Tags Management
+- Authors Management
 
 <img src="art/modular-blog-cms.jpg" alt="Modular Blog Index" style="width: 100%;">
 
@@ -30,9 +30,9 @@ You can easily create posts using a Fully Featured WYSIWYG Editor, and manage th
 
 The **Blog Module Public Views** offers the following features:
 
--   **Archive Selector:** Automatically groups posts by month and year, allowing users to filter posts by specific periods.
--   **Tag Selector:** Enables filtering of posts by specific tags. By default, only tags with associated posts are displayed.
--   **Search Posts:** Incorporates a simple search feature within the module.
+- **Archive Selector:** Automatically groups posts by month and year, allowing users to filter posts by specific periods.
+- **Tag Selector:** Enables filtering of posts by specific tags. By default, only tags with associated posts are displayed.
+- **Search Posts:** Incorporates a simple search feature within the module.
 
 <img src="art/modular-blog-index.jpg" alt="Modular Blog Index" style="width: 100%;">
 
