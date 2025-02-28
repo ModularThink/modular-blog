@@ -8,6 +8,14 @@ export default [
     // Base ESLint recommended rules
     js.configs.recommended,
 
+    // Prettier configuration to disable conflicting rules
+    {
+        rules: {
+            ...prettierConfig.rules,
+            'unicode-bom': 'off'
+        }
+    },
+
     // Vue plugin configuration
     {
         files: ['**/*.vue'],
@@ -26,9 +34,12 @@ export default [
             ...vue.configs.base.rules,
             ...vue.configs['vue3-recommended'].rules,
 
+            '@stylistic/js/indent': 'off',
+            '@stylistic/js/quotes': 'off',
+
             // Disable specific Vue rules
             'vue/no-v-html': 'off',
-            'vue/comment-directive': 'off' // Previously disabled
+            'vue/comment-directive': 'off'
 
             // You can add other Vue-specific rules here
         }
@@ -43,14 +54,7 @@ export default [
         }
     },
 
-    // Prettier configuration to disable conflicting rules
-    {
-        rules: {
-            ...prettierConfig.rules
-        }
-    },
-
-    // Custom rules and environment settings
+    // Custom rules (if any)
     {
         languageOptions: {
             globals: {
